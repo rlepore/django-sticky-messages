@@ -1,0 +1,31 @@
+[
+  { "fields" : { "date_joined" : "2010-01-01T07:00:00-05:00",
+        "email" : "user@test.com",
+        "first_name" : "User",
+        "groups" : [ 1 ],
+        "is_active" : true,
+        "is_staff" : false,
+        "is_superuser" : false,
+        "last_login" : "2010-01-01T07:00:00-05:00",
+        "last_name" : "Test",
+        "password" : "sha1$303cd$d71391d56b24e7ce0f43e6e24c1115dd395761fe",
+        "user_permissions" : [  ],
+        "username" : "user@test.com"
+      },
+    "model" : "auth.user",
+    "pk" : 1
+  },
+  {
+    "fields": {
+      "message": "This is an inactive message.",
+      "active_datetime": "2012-12-25 10:00",
+      "inactive_datetime": "2012-12-30 11:30",
+      "created": "2012-12-24 9:00",
+      "modified": "2012-12-24 9:00",
+      "created_by_id": "1",
+      "modified_by_id": 1
+    },
+    "model": "stickymessages.message",
+    "pk": 1
+  }
+]
