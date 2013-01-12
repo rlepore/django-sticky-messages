@@ -16,7 +16,6 @@ class SystemMessageAdmin(admin.ModelAdmin):
         ('Setup', {'fields': ['active_datetime', 'inactive_datetime']})
     ]
     list_display = ('message', 'active_datetime', 'inactive_datetime', 'modified', 'modified_by', 'created', 'created_by' )
-    ##list_filter = ['active_datetime', 'inactive_datetime']
     
     def save_model(self, request, message, form, change): 
         if not change:
