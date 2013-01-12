@@ -14,7 +14,7 @@ setup(
     license = 'MIT',
     description = 'A simple Django app to display "sticky" messages that expire after a given time period.',
     long_description = README,
-    url = '',
+    url = 'https://github.com/rlepore/django-sticky-messages',
     author = 'Ralph Lepore',
     author_email = 'ralphlepore@gmail.com',
     classifiers = [
