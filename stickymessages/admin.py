@@ -7,12 +7,12 @@ from django.utils.translation import ugettext_lazy as _
 
 from stickymessages import models
 
-class SystemMessageAdmin(admin.ModelAdmin):
+class StickyMessageAdmin(admin.ModelAdmin):
     """
-    Admin class for the SystemMessage model.
+    Admin class for the StickyMessage model.
     """
     fieldsets = [
-        ('System message to display', {'fields': ['message']}),
+        ('Sticky message to display', {'fields': ['message']}),
         ('Setup', {'fields': ['active_datetime', 'inactive_datetime']})
     ]
     list_display = ('message', 'active_datetime', 'inactive_datetime', 'modified', 'modified_by', 'created', 'created_by' )
@@ -25,4 +25,4 @@ class SystemMessageAdmin(admin.ModelAdmin):
         message.modified_by = request.user
         message.save()
 
-admin.site.register(models.Message, SystemMessageAdmin)
+admin.site.register(models.Message, StickyMessageAdmin)
